@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/*==========================================
+  HOME (rise.html), LOGIN, REGISTER  ->  html.main
+==========================================*/
+
+html.main .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+html.main .logo{
+    font-size: 2em;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html.main nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+html.main .nav-links{
+    flex: 1;
+    text-align: right;
+}
+html.main .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+html.main .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+html.main .nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #0a3044;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+html.main .nav-links ul li:hover::after{
+    width: 100%;
+}
+html.main .text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+html.main .text-box h1{
+    font-size: 62px;
+}
+html.main .text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+html.main .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+html.main .hero-btn:hover{
+    border: 1px solid #b8860b;
+    background: #b8860b;
+    transition: 1s;
+}
+
+html.main nav .bx{
+    display: none;
+}
+
+/*------ Travel Basics (cards) ------*/
+
+html.main .course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+html.main h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+html.main p{
+    color: #0a3044;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+html.main .row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+html.main .course-col p{
+    color: #fff;
+}
+html.main .course-col{
+    flex-basis: 31%;
+    background: #0a3044;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+html.main .course-col a{
+    text-decoration: none;
+    color: inherit;
+}
+html.main h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+    color: #fff;
+}
+html.main .course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,1);
+}
+
+/*------ Destinations (image grid) ------*/
+
+html.main .campus{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+html.main .campus-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+html.main .campus-col img{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    display: block;
+}
+html.main .layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+html.main .layer:hover{
+    background: #0a3044b0;
+}
+html.main .layer h3{
+    width: 100%;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+html.main .layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/*------ Call to action ------*/
+
+html.main .cta{
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(contact.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+html.main .cta h1{
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+
+/*------ Footer ------*/
+
+html.main .footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+html.main .footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+html.main .icons .bx{
+    color: #0a3044;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 30px;
+}
+
+
+/*==========================================
+  ABOUT (aboutus.html)  ->  html.abt
+==========================================*/
+
+html.abt .header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(background.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+html.abt .logo{
+    font-size: 2em;
+    font-weight: bold;
+    color: aliceblue;
+    text-decoration: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html.abt nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+html.abt .nav-links{
+    flex: 1;
+    text-align: right;
+}
+html.abt .nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+html.abt .nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+html.abt .nav-links ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #0a3044;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+html.abt .nav-links ul li:hover::after{
+    width: 100%;
+}
+html.abt .text-box{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+html.abt .text-box h1{
+    font-size: 62px;
+}
+html.abt .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+html.abt .hero-btn:hover{
+    border: 1px solid #b8860b;
+    background: #b8860b;
+    transition: 1s;
+}
+
+html.abt nav .bx{
+    display: none;
+}
+
+
+
+
+/*------ About text ------*/
+
+html.abt .about{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+html.abt .about h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000;
+}
+html.abt .about p{
+    color: #0a3044;
+    font-size: 1.3em;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/*------ What we offer (cards) ------*/
+
+html.abt .offer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+html.abt h1{
+    font-size: 30px;
+    font-weight: 600;
+}
+html.abt .serve{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+html.abt .serv-col{
+    flex-basis: 31%;
+    background: #0a3044;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+html.abt .serv-col a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.5s ease;
+}
+html.abt .serv-col a:hover{
+    text-decoration: underline rgba(255, 255, 255, 0.7);
+}
+html.abt .serv-col p{
+    color: #fff;
+}
+html.abt h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0px;
+    color: #fff;
+}
+html.abt .serv-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,1);
+}
+html.abt h2{
+    text-align: center;
+    font-weight: bold;
+    color: #0a3044;
+    font-size: 15px;
+}
+
+
+/*------ Footer ------*/
+
+html.abt .footer{
+    text-align: center;
+    color: #0a3044;
+    font-size: 15px;
+}
+html.abt .footer h4{
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 20px;
+}
+html.abt .icons .bx{
+    color: #0a3044;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    font-size: 30px;
+}
+html.abt footer{
+    background-color: #0a3044;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+
+/*==========================================
+  SHARED (all pages)
+==========================================*/
+
+:root { --butthover: #f44336; }
+
+
+.nav-links ul li a.nav-btn{
+    border: 1px solid #fff;
+    border-radius: 20px;
+    padding: 6px 18px;
+}
+.nav-links ul li a.nav-btn:hover{
+    background: var(--butthover);
+    border-color: var(--butthover);
+}
